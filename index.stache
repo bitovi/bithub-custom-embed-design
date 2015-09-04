@@ -1,0 +1,10 @@
+<div class="sidebar">
+  <a href="{{state.embedUrl}}" target="_blank" class="embed-url">Open Embed</a>
+  <hr>
+  {{#if state.options}}
+    <bh-options options="{state.options}" option-values="{state.optionValues}"></bh-options>
+  {{/if}}
+</div>
+<div class="iframe-wrap">
+  <iframe src="./external-widget.html"></iframe>
+</div>

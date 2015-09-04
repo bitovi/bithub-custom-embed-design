@@ -1,0 +1,16 @@
+<h3>Widget Options</h3>
+<hr>
+{{#each options}}
+  <div class="option-wrap">
+    <h4>{{ name }}</h4>
+    {{#eq type 'boolean'}}
+      <bh-boolean-option option="{.}" option-name="{@key}" option-values="{optionValues}"></bh-boolean-option>
+    {{/eq}}
+    {{#eq type 'choice'}}
+      <bh-choice-option option="{.}" option-name="{@key}" option-values="{optionValues}"></bh-choice-option>
+    {{/eq}}
+    {{#eq type 'color'}}
+      <bh-color-option option="{.}" option-name="{@key}" option-values="{optionValues}"></bh-color-option>
+    {{/eq}}
+  </div>
+{{/each}}

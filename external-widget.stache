@@ -1,0 +1,16 @@
+<div class="embed font-{{state.optionValues.fontStyle}} theme-{{state.optionValues.theme}}">
+  <h1 style="color: {{state.optionValues.headerColor}}">Iframe header</h1>
+  {{#if state.optionValues.onlyImages}}
+    This embed will show only images
+  {{else}}
+    This embed will show anything
+  {{/if}}
+
+  <h2>Cards</h2>
+
+  <div class="clearfix">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+</div>
